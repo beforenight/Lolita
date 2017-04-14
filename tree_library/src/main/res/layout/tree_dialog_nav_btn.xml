@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/tree_dialog_nav_btn_bg_selector"
+        android:button="@null"
+        android:checked="true"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_right_indicator"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:text="请选择"
+        android:textColor="@color/tree_dialog_nav_btn_text_color_selector"
+        android:textSize="14sp" />

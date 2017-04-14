@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+    <View
+            android:id="@+id/translucent_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#7f000000" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#f4f3f9">
+
+            <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/app_name"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+            <ImageButton
+                    android:id="@android:id/closeButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/edit_text_clean_all" />
+        </FrameLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2" />
+
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:scrollbars="none">
+
+            <RadioGroup
+                    android:id="@+id/layout_selected_node_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                <include
+                        layout="@layout/tree_dialog_nav_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2" />
+
+        <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#d2d2d2"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                    android:left="-40dp"
+                    android:right="-40dp"
+                    android:top="-40dp">
+
+                <shape>
+                    <!--  这里改填充颜色 -->
+                    <solid android:color="@android:color/transparent" />
+
+                    <!--  这里改底部线条颜色 -->
+                    <stroke
+                            android:width="2dp"
+                            android:color="#45c01a" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>
