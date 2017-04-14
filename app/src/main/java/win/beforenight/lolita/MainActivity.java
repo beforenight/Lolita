@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity
 
     };
 
+    /**
+     * 跳转新的页面
+     */
     private void initIntentData()
     {
         Intent intent = getIntent();
