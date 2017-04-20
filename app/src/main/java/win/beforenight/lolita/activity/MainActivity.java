@@ -1,4 +1,4 @@
-package win.beforenight.lolita;
+package win.beforenight.lolita.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import win.beforenight.lolita.R;
 
 public class MainActivity extends AppCompatActivity
 {
